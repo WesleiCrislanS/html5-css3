@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        body>h1 {
+            text-align: center;
+            padding: 2px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        header>h2 {
+            text-decoration: underline;
+            
+        }
+
+        header>h2>span {
+            text-decoration: solid rgb(98, 186, 189);
+        }
+
+        nav {
+            background-color: rgb(62, 255, 191);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+            border-radius: 10px;
+        }
+
+        nav>a {
+            background-color: rgb(14, 60, 45);
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: antiquewhite;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: aquamarine;
+        }
+
+        article>aside {
+            background-color: rgb(130, 158, 148);
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 1px;
+            font-size: 15px;
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+        }
+
+        footer>p>span {
+            color: darkgreen;
+            font-size: 20px;
+            text-decoration: underline
+        }
+
+        footer>p>span>a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            background-color: rgb(2, 2, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Grouping Tags</H1>
+    <header>
+        <H2>Meu <span>site</span></H2>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esportes, Politicas e Tecnologias</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Noticias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum doloribus consequatur,
+                    cupiditate nostrum, nobis quisquam totam tempore eveniet adipisci quae, doloremque est molestiae
+                    consequuntur. Fuga nemo nobis ex eaque.</p>
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <span><a
+                    href="https://www.instagram.com/shwes.me?igsh=MTRkcmZiYW54Y3k3Yg==" target="_blank">Weslei</a></span></p>
+    </footer>
+</body>
+
+</html>
